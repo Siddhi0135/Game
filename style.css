@@ -1,109 +1,64 @@
-body{
-    background-color: green;
-    background: url('images/bg.jpg');
-    /* background-repeat: no-repeat;
-    background-size: 100% auto; */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto:wght@300;400&display=swap');
 
-    height: 100%;
-    background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 *{
-    font-family: 'Source Sans Pro', sans-serif;
-    color:antiquewhite;
-    font-size:30px;
+    margin: 0;
+    padding: 0;
 }
-#heading h1{
-    font-size: 1.2rem;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.game{
+.navbar{
+    background-color: #4d154d;
+    color:white;
+    font-size: 25px;
+    padding: 5px 15px;
+    font-family: 'Roboto', sans-serif;
+    height: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
-.deck{
-    width:300px;
-}
-
-.play{
-    padding:2px 10px;
-    cursor: pointer;
-    color: black;
-    border-radius: 10px;
-}
-
-.ply{
+.gameContainer{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding:35px 10px;
+    /* background-color: yellow; */
+    margin-top: 50px;
 }
-.ply img{
-    padding:1px 50px;
-
+.Mycontainer{
+    display:grid;
+    grid-template-rows: repeat(3,10vw);
+    /* not in auto or pixels but use vw for reponsiveness */
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Roboto', sans-serif;
 }
-.Shuffle{
-    padding: 2px 10px;
-    cursor: pointer;
-    margin:10px;
-    color: black;
-    border-radius: 10px;
-}
-.numbers{
-    padding: 20px;
-}
-.middle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:160px;
-}
-.winner{
+.box{
+    border:2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-
+    font-size: 7vw;
 }
-#imageHolder1{
-    height:150px;
-    width:150px;
-    padding:12px 10px;
-    /* border:2px solid black; */
-    translate:100px;
-}
-#imageHolder2{
-    height:150px;
-    width:150px;
-    padding:12px 10px;
-    /* border:2px solid red; */
-    /* translate: -150px 20px; */
-    translate: -50px 20px;
-}
-.addedImage{
-    height:150;
-    width:100;
-
+.box:hover{
+    background-color: rgb(252, 199, 252);
 }
 
-/* .newimg{
-    width:110px;
-    translate: 120px -165px;
-    animation: img1 2s ease-in-out 0.5 1;
+.gameInfo{
+    font-family: 'Roboto', sans-serif;
+    padding:20px;
 }
-@keyframes img1 {
-    .newimg{
-        transition:;
-        translate: 0px 0px;
-    }
-    
-} */
-.newimg{
-    width: 110px;
+.gameInfo span{
+    display:block;
+}
+.excited{
+    width:0px;
+    transition: width 1s ease-in-out;
+}
+.bt{
+    border-top: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+.br{
+    border-right: 0;
+}
+.bl{
+    border-left: 0;
 }
