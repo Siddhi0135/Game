@@ -7,7 +7,7 @@ const moveSound=new Audio('music/move.mp3');
 const musicSound=new Audio('music/music.mp3');
 
 let lastPaintTime=0;
-let speed=5;
+let speed=8;
 let snakeArr=[
     {x:13,y:15}
 ];
